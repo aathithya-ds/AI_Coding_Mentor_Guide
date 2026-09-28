@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Concepts | AI Coding Mentor</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+    <style>
+        .page-section {
+            padding: 60px 0;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .page-header h1 {
+            font-size: 48px;
+            margin: 18px 0;
+
+            background: linear-gradient(
+                90deg,
+                #ffffff,
+                #a78bfa,
+                #67e8f9,
+                #f9a8d4
+            );
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .page-header p {
+            color: #aeb7d0;
+            font-size: 17px;
+        }
+
+        .concept-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .concept-card {
+            position: relative;
+            padding: 28px;
+
+            min-height: 260px;
+
+            background: rgba(255, 255, 255, 0.06);
+
+            border: 1px solid rgba(255, 255, 255, 0.12);
+
+            border-radius: 22px;
+
+            backdrop-filter: blur(18px);
+
+            transition: 0.35s;
+
+            overflow: hidden;
+        }
+
+        .concept-card:hover {
+            transform: translateY(-8px);
+
+            border-color: rgba(139, 92, 246, 0.6);
+
+            box-shadow:
+                0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .concept-icon {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .concept-card h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .difficulty {
+            display: inline-block;
+
+            padding: 5px 12px;
+
+            border-radius: 30px;
+
+            background: rgba(34, 211, 238, 0.1);
+
+            color: #67e8f9;
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            margin-bottom: 15px;
+        }
+
+        .concept-card p {
+            color: #aeb7d0;
+
+            line-height: 1.7;
+
+            font-size: 14px;
+
+            margin-bottom: 18px;
+        }
+
+        .example {
+            background: rgba(0, 0, 0, 0.3);
+
+            border: 1px solid rgba(255, 255, 255, 0.08);
+
+            border-radius: 12px;
+
+            padding: 13px;
+
+            color: #dbeafe;
+
+            font-family: Consolas, monospace;
+
+            font-size: 12px;
+
+            white-space: pre-wrap;
+        }
+
+        @media (max-width: 900px) {
+            .concept-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .concept-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .page-header h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        🤖 AI Coding Mentor
+    </div>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/mentor">Mentor</a>
+        <a href="/concepts">Concepts</a>
+        <a href="/progress">Progress</a>
+    </nav>
+
+</header>
+
+
+<main class="container">
+
+    <section class="page-section">
+
+        <div class="page-header">
+
+            <span class="badge">
+                LEARNING HUB
+            </span>
+
+            <h1>
+                Programming Concepts
+            </h1>
+
+            <p>
+                Learn important programming concepts
+                with simple explanations and examples.
+            </p>
+
+        </div>
+
+
+        <div class="concept-grid">
+
+
+            <div class="concept-card">
+
+                <div class="concept-icon">📦</div>
+
+                <h3>Variables</h3>
+
+                <span class="difficulty">
+                    BEGINNER
+                </span>
+
+                <p>
+                    Variables are names used to store
+                    values in a Python program.
+                </p>
+
+                <div class="example">
+name = "Aathithya"
+age = 21
+                </div>
+
+            </div>
+
+
+            <div class="concept-card">
+
+                <div class="concept-icon">⚙️</div>
+
+                <h3>Functions</h3>
+
+                <span class="difficulty">
+                    BEGINNER
+                </span>
+
+                <p>
+                    Functions are reusable blocks of code
+                    designed to perform specific tasks.
+                </p>
+
+                <div class="example">
+def add(a, b):
+    return a + b
+                </div>
+
+            </div>
+
+
+            <div class="concept-card">
+
+                <div class="concept-icon">🔁</div>
+
+                <h3>Loops</h3>
+
+                <span class="difficulty">
+                    BEGINNER
+                </span>
+
+                <p>
+                    Loops execute a block of code repeatedly
+                    until a condition is satisfied.
+                </p>
+
+                <div class="example">
+for i in range(5):
+    print(i)
+                </div>
+
+            </div>
+
+
+            <div class="concept-card">
+
+                <div class="concept-icon">📋</div>
+
+                <h3>Lists</h3>
+
+                <span class="difficulty">
+                    BEGINNER
+                </span>
+
+                <p>
+                    Lists store multiple ordered values
+                    inside a single collection.
+                </p>
+
+                <div class="example">
+fruits = [
+    "apple",
+    "banana",
+    "orange"
+]
+                </div>
+
+            </div>
+
+
+            <div class="concept-card">
+
+                <div class="concept-icon">🗂️</div>
+
+                <h3>Dictionary</h3>
+
+                <span class="difficulty">
+                    INTERMEDIATE
+                </span>
+
+                <p>
+                    Dictionaries store information using
+                    key-value pairs.
+                </p>
+
+                <div class="example">
+student = {
+    "name": "Aathithya",
+    "age": 21
+}
+                </div>
+
+            </div>
+
+
+            <div class="concept-card">
+
+                <div class="concept-icon">🏗️</div>
+
+                <h3>Classes & OOP</h3>
+
+                <span class="difficulty">
+                    INTERMEDIATE
+                </span>
+
+                <p>
+                    Classes provide a blueprint for creating
+                    objects in object-oriented programming.
+                </p>
+
+                <div class="example">
+class Student:
+
+    def __init__(self, name):
+        self.name = name
+                </div>
+
+            </div>
+
+
+            <div class="concept-card">
+
+                <div class="concept-icon">🛡️</div>
+
+                <h3>Exception Handling</h3>
+
+                <span class="difficulty">
+                    INTERMEDIATE
+                </span>
+
+                <p>
+                    Exception handling manages runtime errors
+                    without crashing the application.
+                </p>
+
+                <div class="example">
+try:
+    result = 10 / 0
+
+except ZeroDivisionError:
+    print("Error")
+                </div>
+
+            </div>
+
+
+            <div class="concept-card">
+
+                <div class="concept-icon">🤖</div>
+
+                <h3>Machine Learning</h3>
+
+                <span class="difficulty">
+                    INTERMEDIATE
+                </span>
+
+                <p>
+                    Machine Learning allows systems to learn
+                    patterns from data and make predictions.
+                </p>
+
+                <div class="example">
+from sklearn
+import LinearRegression
+
+model = LinearRegression()
+                </div>
+
+            </div>
+
+
+            <div class="concept-card">
+
+                <div class="concept-icon">🧠</div>
+
+                <h3>NLP</h3>
+
+                <span class="difficulty">
+                    INTERMEDIATE
+                </span>
+
+                <p>
+                    Natural Language Processing helps computers
+                    understand and process human language.
+                </p>
+
+                <div class="example">
+text = "Explain Python"
+words = text.split()
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        AI Coding Mentor Guide
+        | Data Alcott Systems Internship
+    </p>
+
+</footer>
+
+</body>
+
+</html>

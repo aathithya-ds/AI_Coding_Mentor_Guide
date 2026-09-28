@@ -1,0 +1,104 @@
+{
+    "variable": {
+        "difficulty": "Beginner",
+        "explanation": "A variable is a name used to store a value in a program.",
+        "example": "name = 'Aathithya'\nage = 21",
+        "keywords": [
+            "variable",
+            "value",
+            "assignment"
+        ]
+    },
+
+    "function": {
+        "difficulty": "Beginner",
+        "explanation": "A function is a reusable block of code that performs a specific task.",
+        "example": "def add(a, b):\n    return a + b",
+        "keywords": [
+            "function",
+            "def",
+            "return"
+        ]
+    },
+
+    "loop": {
+        "difficulty": "Beginner",
+        "explanation": "A loop is used to execute a block of code repeatedly.",
+        "example": "for i in range(5):\n    print(i)",
+        "keywords": [
+            "loop",
+            "for",
+            "while",
+            "iteration"
+        ]
+    },
+
+    "list": {
+        "difficulty": "Beginner",
+        "explanation": "A list is an ordered collection that can store multiple values.",
+        "example": "fruits = ['apple', 'banana', 'orange']",
+        "keywords": [
+            "list",
+            "append",
+            "remove"
+        ]
+    },
+
+    "dictionary": {
+        "difficulty": "Intermediate",
+        "explanation": "A dictionary stores data using key-value pairs.",
+        "example": "student = {'name': 'Aathithya', 'age': 21}",
+        "keywords": [
+            "dictionary",
+            "key",
+            "value"
+        ]
+    },
+
+    "class": {
+        "difficulty": "Intermediate",
+        "explanation": "A class is a blueprint used to create objects in object-oriented programming.",
+        "example": "class Student:\n    def __init__(self, name):\n        self.name = name",
+        "keywords": [
+            "class",
+            "object",
+            "OOP"
+        ]
+    },
+
+    "exception": {
+        "difficulty": "Intermediate",
+        "explanation": "Exception handling is used to handle runtime errors without crashing the program.",
+        "example": "try:\n    result = 10 / 0\nexcept ZeroDivisionError:\n    print('Cannot divide by zero')",
+        "keywords": [
+            "exception",
+            "try",
+            "except",
+            "error"
+        ]
+    },
+
+    "machine_learning": {
+        "difficulty": "Intermediate",
+        "explanation": "Machine learning allows computers to learn patterns from data and make predictions or decisions.",
+        "example": "from sklearn.linear_model import LinearRegression\nmodel = LinearRegression()",
+        "keywords": [
+            "machine learning",
+            "model",
+            "training",
+            "prediction"
+        ]
+    },
+
+    "nlp": {
+        "difficulty": "Intermediate",
+        "explanation": "Natural Language Processing helps computers understand and process human language.",
+        "example": "text = 'Explain Python functions'\nwords = text.split()",
+        "keywords": [
+            "NLP",
+            "language",
+            "text",
+            "processing"
+        ]
+    }
+}
